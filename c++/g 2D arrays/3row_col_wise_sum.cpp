@@ -39,23 +39,36 @@ for (int i=0;i<row;i++){
 }
 }
 
-int largest_rowsum(int arr[][3],int row,int col){
-      int singlearr[row-1]={0};
+// int largest_rowsum(int arr[][3],int row,int col){
+//       int singlearr[row-1]={0};
    
+//     for(int j=0;j<row;j++){
+//          int sum=0;                          // this function returns the largest row sum ..... 
+//     for(int i=0;i<col;i++){
+//         sum+= arr[j][i];
+//    }
+//     singlearr[j]=sum;
+// }
+
+// int largest=-1;
+// for (int i=0;i<row;i++){
+//     if (largest < singlearr[i]){
+//         largest= singlearr[i];}
+// }
+//  return largest;
+// }
+
+int largest_rowsum(int  arr[][3],int row,int col){
+  int maxi = -1;
     for(int j=0;j<row;j++){
-         int sum=0;                          // this function returns the largest row sum ..... 
+         int sum=0;                          //this function returns the largest row sum ..... 
     for(int i=0;i<col;i++){
         sum+= arr[j][i];
    }
-    singlearr[j]=sum;
+    maxi = max(maxi,sum);
 }
 
-int largest=-1;
-for (int i=0;i<row;i++){
-    if (largest < singlearr[i]){
-        largest= singlearr[i];}
-}
- return largest;
+return maxi;
 }
 
 int main()

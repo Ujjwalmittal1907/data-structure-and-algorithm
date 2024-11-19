@@ -7,6 +7,7 @@ class hero{
     char level;
 
     public:
+   void 
     gethealth(){
         return health;
     }

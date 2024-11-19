@@ -1,3 +1,6 @@
+
+
+
 #include <iostream>
 using namespace std;	
 
@@ -50,3 +53,6 @@ int main()
   wave_print(arr1,3,3);
     return 0;
 }
+
+// if we talk about the time complixity then we see we transverse each elements only ones .
+// Time complixity ho gai O(N*M),

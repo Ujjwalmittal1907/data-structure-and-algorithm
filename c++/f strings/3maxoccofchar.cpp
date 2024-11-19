@@ -1,5 +1,7 @@
 // this program to find the maximum occurance of a character in a string 
 
+// hamari approch 
+
 #include <iostream>
 using namespace std;	
 
@@ -10,9 +12,10 @@ char maxoccofchar(string s){
     for(int i=0;i<s.length();i++){
         char ch=s[i];
         int number=0;
+        // lower case
         if (ch>='a' && ch<='z'){
             number= ch-'a';}
-
+     // upper case
         else {
             number= ch-'A';
         }

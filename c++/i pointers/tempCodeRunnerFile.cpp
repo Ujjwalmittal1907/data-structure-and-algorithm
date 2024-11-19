@@ -1,0 +1,1 @@
+cout << "after address increment " << poi << endl;

@@ -54,3 +54,4 @@ for example
 
     return 0;
 }
+ // FOR A EMPTY class it take 1 byte of memory.

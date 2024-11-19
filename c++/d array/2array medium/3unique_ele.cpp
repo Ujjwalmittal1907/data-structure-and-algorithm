@@ -55,11 +55,15 @@ using namespace std;
 int main()                                // see the simplicity of code 
                                           // just compare method 1 and method2
 {
-   int arr[5]={2,3,5,3,2};
-   int ans=0;
-   for(int i=0;i<5;i++){
+   int arr[7]={1,2,3,4,5,3};
+   int ans=3;
+   for(int i=0;i<7;i++){
       ans=ans^arr[i];
+      cout << ans << " ";
    }
+    for(int i = 1; i< 7;i++){
+      ans = ans^i;
+    }
    cout << "ans " <<  ans;
    return 0;
 }

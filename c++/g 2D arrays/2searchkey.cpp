@@ -26,7 +26,7 @@ int main()
     }
 
     if (ans==1){
-        cout << "comngrats key found";
+        cout << "congrats key found";
     }
   else{
     cout << "key not found";

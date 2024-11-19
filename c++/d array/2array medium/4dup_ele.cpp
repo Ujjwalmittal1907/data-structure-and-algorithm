@@ -10,15 +10,17 @@ using namespace std;
 int dup_ele(int arr[],int size){
  int ans=0;
 for(int i=0;i<size;i++){
-    for(int j=0;j<size;j++){
-        if(i==j){continue;}
-        else if (arr[i]==arr[j]){
-            ans=1;
+    for(int j=i+1;j<size;j++){
+       
+     if (arr[i]==arr[j]){
+            ans=arr[i];
             break;
         }
+
+        else{ continue;}
     }
-    if(ans==1){
-        return arr[i];
+    if(ans!=0){
+        return ans;
         break;
     }
 }
@@ -43,10 +45,12 @@ int find_dup(int arr[],int size){
     int ans=0;
     for (int i=0;i<size;i++){
      ans=ans^arr[i];
+     cout << ans << "  ";
     }
 
     for (int j=1;j<size;j++){
         ans=ans^j;
+        cout << " stage 2" << ans << "  ";
     }
     return ans;
 }

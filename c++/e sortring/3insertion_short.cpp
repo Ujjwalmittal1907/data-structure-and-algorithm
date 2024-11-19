@@ -3,9 +3,9 @@ using namespace std;
 
 void insertion_short(int arr[],int size){
 for (int i=1;i<size-1;i++){
-    int j;
     int temp=arr[i];
-    for( j=i-1;j>=0;j--){
+    int j;
+    for( int j=i-1;j>=0;j--){
         if(arr[j]>temp){
             arr[j+1]=arr[j];
         }

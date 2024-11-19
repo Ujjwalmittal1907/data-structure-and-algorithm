@@ -1,3 +1,25 @@
+// #include <iostream>
+// using namespace std;	
+// int main()
+// {
+//     int a;
+//     cout << "enter your prime ";
+//     cin >> a;
+//        int ans=0;
+//     for (int i=2; i<a/2;i++){
+//         if (a%i==0){
+//             cout << "this is not prime";
+//             ans =1;
+//             break;
+//         }
+//     }
+//     if (ans ==0){
+//         cout << "it is a prime";
+//     }
+
+//     return 0;
+// }
+
 #include <iostream>
 using namespace std;
 
@@ -15,34 +37,29 @@ bool isprime(int n){
     return true;
 }
 
-int countprime(int m){                   // countprime counts all the number which are prime...
+
+void countprime(int m){  
+                                    // countprime counts all the number which are prime...
     int count=0;
     for(int i=2;i<=m;i++){
         if (isprime(i)){
-            count++;
+           cout << i << " ";
+            count++ ;
         }
     }
-    return count;
+    cout << endl << "total primes number are: " <<  count;
 }
+
+ 
 
 int main()
 {
-   /* cout << "enter your number";
-     int n;
-     cin >> n;
-
-     if(isprime(n)){
-        cout << "yaa! it is a prime number";
-     }
-     else{
-        cout << "it is not a prime a number";
-     }
-*/
+  
      cout << endl;
      cout << "enter your number";
      int num;
      cin >> num;
-     cout << countprime(num);
+     countprime(num);
     return 0;
 }
 

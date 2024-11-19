@@ -11,11 +11,11 @@ int main(){
 
 int glob=12;
 
-cout << "lacal variable = " << glob << endl;
-cout << "global variable= "<< ::glob << endl;
-cout << glob++ << endl;
-cout << glob;
-cout << ++glob << endl;
+cout << "lacal variable = " << glob << endl;                     
+cout << "global variable= "<< ::glob << endl;                     
+cout << glob++ << endl;                                        
+cout << glob;                                                   
+cout << ++glob << endl;                                         
 cout << glob-- << endl;
 cout << --glob<< endl;
 }
