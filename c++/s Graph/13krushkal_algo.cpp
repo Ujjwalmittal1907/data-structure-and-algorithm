@@ -40,7 +40,6 @@ bool cmp(vector<int>&a ,  vector<int> &b){
      rank[u]++ ;
    }
  }
-
 int minimumSpanningTree(vector<vector<int>>& edges, int n)
 {
  

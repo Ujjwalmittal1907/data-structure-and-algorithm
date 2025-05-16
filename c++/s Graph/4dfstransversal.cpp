@@ -2,7 +2,7 @@
 // dfs algorithm 
 
 
-void dfs(int node ,  vector<int>edges, vector<int> &ans ,vector<bool> &visited ){
+void dfs(int node ,  vector<vector<int>>edges, vector<int> &ans ,vector<bool> &visited ){
     visited[node] =1;
     ans.push_back(node);
     for(int i = 0; i< edges[node].size();i++){
@@ -15,7 +15,7 @@ void dfs(int node ,  vector<int>edges, vector<int> &ans ,vector<bool> &visited )
 
 }
 
-vector<vector<int>> depthFirstSearch(int V, int E, vector<int>edges)
+vector<int> depthFirstSearch(int V, int E, vector<vector<int>>edges)
 {
     // Write your code here
 

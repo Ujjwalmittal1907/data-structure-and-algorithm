@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-         // to get a pivot no. of rotated array
+// to get a pivot no. of rotated array
 int getpivot(int arr[] , int size){
 int s=0;   
 int e=size-1;

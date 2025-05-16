@@ -32,8 +32,8 @@ class Solution {
         }
         
         
-        // chalo cycle detect kerte hai 
-        //   agar dist vectior mai kuch bji change hota hai matlab cycle hai 
+        //   chalo cycle detect kerte hai 
+        //   agar dist vector mai kuch bji change hota hai matlab cycle hai 
         //   isme jo negative weighted hain
         
         for(int z = 0 ; z< size ;z++){
@@ -47,7 +47,7 @@ class Solution {
                 
                 if(dist[u] + weight < dist[v]){
                     vector<int>ans;
-                    ans.push_back(-1);
+                    ans.push_back(-1);   // return {-1}
                     return ans;
                 }
             

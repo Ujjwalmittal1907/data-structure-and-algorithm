@@ -46,6 +46,12 @@ int numberocc(int arr[],int size ,int key){
  int num = mostocc( arr, size,key) -  leastocc( arr,size,key) ;
   cout << num;
  }
+
+ // 1 2 3 5 8 8 8 9 10 11        key = 8
+ // lower bound = 4 == least occ     (upper bound-1) = 7-1 == most occ 
+
+ // but but if not present or at hypothtical (edge case)
+ //if(lb == n || nums[lb] != key ) return -1 ;
 int main(){
 
 int ujjwal[11]={0,5,5,5,7,8,8,10,10,10,10};

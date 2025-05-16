@@ -8,6 +8,7 @@
 //     if (head == NULL){
 //         return NULL;
 //     }
+
 //   // solving 1 case
     
 //     int count = 0;

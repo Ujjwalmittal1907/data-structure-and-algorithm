@@ -11,7 +11,7 @@ void merge(int arr1[],int n,int arr2[],int m,int arr3[],int o)
     if (arr1[i]<arr2[j]){          // ke values jaayegi.
        arr3[k++]=arr1[i++];
 }
-    else{
+    else{ 
       arr3[k++]=arr2[j++];
     
     }
